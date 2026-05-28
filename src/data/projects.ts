@@ -63,4 +63,19 @@ export const projects = [
     ],
     images: [],
   },
+  {
+    id: "my-portfolio",
+    title: "Personal Portfolio Website",
+    subTitle: "Next.js Portfolio Site",
+    description:
+      "A personal portfolio website built with Next.js 14, TypeScript, and Tailwind CSS. Features a responsive sidebar layout, dark/light theme switching, animated mesh background, and sections for education, skills, projects, and contact.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    links: [
+      {
+        name: "GitHub Repository",
+        link: "https://github.com/cheeriocat/my-portfolio",
+      },
+    ],
+    images: [],
+  },
 ];
