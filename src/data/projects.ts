@@ -9,7 +9,7 @@ export const projects = [
     links: [
       {
         name: "GitHub Repository",
-        link: "https://github.com/cheeriocat/resumind",
+        link: "https://github.com/cheeriocat/ai_resume_analyzer",
       },
     ],
     images: [],
