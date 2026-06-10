@@ -13,14 +13,20 @@ import { useTheme } from "next-themes";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "@/redux/store";
 import { close } from "@/redux/features/sidemenu-slice";
+import { cn } from "@/lib/utils";
 
-const SideBar = () => {
+const SideBar = ({ className }: { className?: string }) => {
   const dispatch = useDispatch<AppDispatch>();
   const pathname = usePathname();
   const { setTheme, theme } = useTheme();
 
   return (
-    <div className="p-4 w-60 fixed top-0 left-0 bottom-0 z-20 overflow-y-auto flex flex-col bg-blue-700 dark:bg-gray-900 text-white">
+    <div
+      className={cn(
+        "p-4 w-60 fixed top-0 left-0 bottom-0 z-20 overflow-y-auto flex flex-col bg-blue-700 dark:bg-gray-900 text-white",
+        className,
+      )}
+    >
       <div className="fixed right-3 top-3 block lg:hidden">
         <AiOutlineClose onClick={() => dispatch(close())} />
       </div>
