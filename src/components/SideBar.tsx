@@ -118,7 +118,7 @@ const SideBar = () => {
           </Button>
         </Link>
         <Link
-          href="/assets/Kaveen_CV.pdf"
+          href="/assets/Kaveen_CV new.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >

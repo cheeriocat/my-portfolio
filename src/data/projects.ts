@@ -15,6 +15,21 @@ export const projects = [
     images: [],
   },
   {
+    id: "transpoco",
+    title: "TranspoCore",
+    subTitle: "Java-based desktop application",
+    description:
+      "TranspoCore is a Java-based desktop application designed for managing transportation logistics. It includes features such as driver management, shipment tracking, schedule planning, and report generation.",
+    tech: ["Java", "Maven", "Swing", "JDBC"],
+    links: [
+      {
+        name: "GitHub Repository",
+        link: "https://github.com/cheeriocat/TranspoCore-Transportation-Management-System",
+      },
+    ],
+    images: [],
+  },
+  {
     id: "preschool-management-system",
     title: "Pre-School Management System",
     subTitle: "Web-Based School Management Platform",
