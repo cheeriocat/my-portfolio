@@ -1,18 +1,33 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Inter, Alex_Brush } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
-import SideBar from "@/components/SideBar";
 import { ThemeProvider } from "@/components/theme-provider";
 import ReduxProvider from "@/redux/provider";
 import MobileSideMenu from "@/components/MobileSideMenu";
 import Footer from "@/components/Footer";
 
-const openSans = Open_Sans({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
+const signatureFont = Alex_Brush({
+  subsets: ["latin"],
+  variable: "--font-signature",
+  weight: ["400"],
+});
 
 export const metadata: Metadata = {
-  title: "Kaveen Nimsara",
-  description: "Personal portfolio of Kaveen Nimsara",
+  title: "Nimzii | Kaveen Nimsara - CS Undergraduate & Developer",
+  description:
+    "Personal portfolio of Kaveen Nimsara (Nimzii), a Computer Science undergraduate from Sri Lanka passionate about building clean, modern web apps with React, Next.js & TypeScript.",
+  keywords: [
+    "Nimzii",
+    "Kaveen Nimsara",
+    "Portfolio",
+    "Computer Science",
+    "Sri Lanka",
+    "React Developer",
+    "Next.js Developer",
+    "Full-Stack",
+  ],
 };
 
 export default function RootLayout({
@@ -21,38 +36,31 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={openSans.className}>
-        <div className="mesh-bg">
+    <html lang="en" className={`dark ${signatureFont.variable}`} style={{ colorScheme: "dark" }}>
+      <body className={`${inter.className} min-h-screen bg-[#090d16] text-slate-100 antialiased selection:bg-sky-400 selection:text-slate-950`}>
+        {/* Ambient Mesh Glow */}
+        <div className="mesh-bg" aria-hidden="true">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
         </div>
+
         <ReduxProvider>
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
+            defaultTheme="dark"
+            forcedTheme="dark"
+            enableSystem={false}
           >
-            <main>
-              <div className="flex flex-col min-h-screen">
-                <NavBar />
-                <div className="flex-1 flex">
-                  <div className="hidden lg:block">
-                    <SideBar />
-                  </div>
-                  <MobileSideMenu />
-                  <div className="flex-1 p-4 pt-10 md:p-10 lg:ml-60 ml-0 mt-10 lg:mt-0 main-content">
-                    <div className="min-h-screen">{children}</div>
-                    <div className="mt-10 md:mt-20">
-                      <Footer />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </main>
+            <div className="relative flex flex-col min-h-screen">
+              <NavBar />
+              <MobileSideMenu />
+              <main className="flex-1 max-w-[1550px] w-full mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 pt-24 pb-16">
+                {children}
+              </main>
+              <Footer />
+            </div>
           </ThemeProvider>
         </ReduxProvider>
       </body>

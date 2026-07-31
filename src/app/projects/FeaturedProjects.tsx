@@ -1,55 +1,49 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import { projects } from "@/data/projects";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { ProjectCard } from "@/components/ProjectCard";
+import { FolderKanban, ArrowRight } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const FeaturedProjects = () => {
+  const featured = projects.slice(0, 3);
+
   return (
-    <div>
-      <h2 className="text-xl md:text-3xl font-bold border-l-4 border-blue-500 pl-3">
-        Featured Projects
-      </h2>
-      <div className="flex flex-col gap-6 mt-6">
-        {projects.map((project) => (
-          <div
-            key={project.id}
-            className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 hover:shadow-md transition-shadow bg-white/50 dark:bg-gray-800/50"
-          >
-            <h3 className="font-bold text-base text-gray-900 dark:text-white">
-              {project.title}
-            </h3>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-              {project.subTitle}
-            </p>
-            <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
-              {project.description}
-            </p>
-            <div className="flex flex-wrap gap-2 mt-3">
-              {project.tech.map((t, i) => (
-                <span
-                  key={i}
-                  className="px-2 py-1 text-xs rounded-full bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200"
-                >
-                  {t}
-                </span>
-              ))}
+    <div className="space-y-6 w-full">
+      {/* Header */}
+      <ScrollReveal>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <div className="p-2.5 rounded-xl bg-sky-500/10 text-sky-400">
+              <FolderKanban className="w-6 h-6" />
             </div>
-            <div className="mt-4 flex gap-2 flex-wrap">
-              {project.links.map((link, i) => (
-                <Link
-                  key={i}
-                  href={link.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="px-3 py-1.5 text-sm border border-gray-300 dark:border-gray-600 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                    {link.name}
-                  </button>
-                </Link>
-              ))}
+            <div>
+              <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+                Featured Projects
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-gray-400 font-medium">
+                Selected recent work & open-source applications
+              </p>
             </div>
           </div>
+
+          <Link
+            href="/projects"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-sky-950/60 hover:bg-sky-500 hover:text-white text-sky-300 border border-sky-800/60 text-xs font-bold self-start sm:self-auto transition-all shadow-xs"
+          >
+            <span>View All ({projects.length})</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+        </div>
+      </ScrollReveal>
+
+      {/* Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {featured.map((project, index) => (
+          <ScrollReveal key={project.id} delay={index * 120}>
+            <ProjectCard project={project} />
+          </ScrollReveal>
         ))}
       </div>
     </div>

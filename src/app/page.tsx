@@ -1,24 +1,26 @@
 import PersonalInfo from "@/components/AboutMe/PersonalInfo";
 import Education from "@/components/AboutMe/Education";
 import WhatIDo from "@/components/AboutMe/WhatIDo";
+import Experience from "@/components/AboutMe/Experience";
 import FeaturedProjects from "@/app/projects/FeaturedProjects";
 
 export default function Home() {
   return (
-    <div className="p-0 lg:pl-20 lg:pr-20 lg:pt-10">
+    <div className="space-y-10 sm:space-y-14">
+      {/* Hero Section */}
       <PersonalInfo />
-      <hr className="mt-5 md:mt-10" />
-      <div className="mt-5 md:mt-10">
+
+      {/* Experience (If present) */}
+      <Experience />
+
+      {/* Skills & Education Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <WhatIDo />
         <Education />
       </div>
-      <hr className="mt-5 md:mt-10" />
-      <div className="mt-5 md:mt-10">
-        <WhatIDo />
-      </div>
-      <hr className="mt-5 md:mt-10" />
-      <div className="mt-5 md:mt-10">
-        <FeaturedProjects />
-      </div>
+
+      {/* Featured Projects Preview */}
+      <FeaturedProjects />
     </div>
   );
 }

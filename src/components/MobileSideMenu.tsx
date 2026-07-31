@@ -14,20 +14,21 @@ const MobileSideMenu = () => {
     <div
       aria-hidden={!isOpen}
       className={cn(
-        "fixed inset-0 z-20 lg:hidden transition-opacity duration-200 ease-out",
-        isOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0",
+        "fixed inset-0 z-50 transition-opacity duration-300 ease-in-out",
+        isOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
       )}
     >
+      {/* Dark backdrop overlay */}
       <button
         type="button"
         aria-label="Close menu"
         onClick={() => dispatch(close())}
-        className="absolute inset-0 bg-black/25"
+        className="absolute inset-0 bg-slate-950/60 backdrop-blur-sm"
       />
       <SideBar
         className={cn(
-          "transition-transform duration-200 ease-out will-change-transform",
-          isOpen ? "translate-x-0" : "-translate-x-full",
+          "transition-transform duration-300 ease-in-out will-change-transform shadow-2xl",
+          isOpen ? "translate-x-0" : "-translate-x-full"
         )}
       />
     </div>
