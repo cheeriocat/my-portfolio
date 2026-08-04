@@ -23,7 +23,7 @@ const NavBar = () => {
         <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group">
           <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-sky-400/40 p-0.5 group-hover:border-sky-400 transition-colors shadow-md flex-shrink-0">
             <img
-              src="/assets/profile.jpg"
+              src="/assets/PP.png"
               alt="Nimzii"
               className="w-full h-full object-cover rounded-full"
             />
@@ -62,7 +62,7 @@ const NavBar = () => {
 
         <div className="flex items-center gap-2 sm:gap-2.5">
           <Link
-            href="/assets/Kaveen_CV new.pdf"
+            href="/assets/Kaveen_CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full bg-sky-950/70 text-sky-300 border border-sky-800/70 hover:bg-sky-500 hover:text-white text-xs font-bold transition-all duration-200 shadow-xs"

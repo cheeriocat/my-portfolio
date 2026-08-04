@@ -44,7 +44,7 @@ const SideBar = ({ className }: { className?: string }) => {
       <div className="flex flex-col items-center text-center my-4">
         <div className="relative w-24 h-24 rounded-full overflow-hidden border-2 border-sky-400/60 p-1 shadow-lg shadow-sky-400/15">
           <img
-            src="/assets/profile.jpg"
+            src="/assets/PP.png"
             alt="Nimzii"
             className="w-full h-full object-cover rounded-full"
           />
@@ -78,7 +78,7 @@ const SideBar = ({ className }: { className?: string }) => {
           );
         })}
         <Link
-          href="/assets/Kaveen_CV new.pdf"
+          href="/assets/Kaveen_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => dispatch(close())}

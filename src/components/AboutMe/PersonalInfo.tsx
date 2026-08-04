@@ -59,7 +59,7 @@ const PersonalInfo = () => {
               </Link>
 
               <Link
-                href="/assets/Kaveen_CV new.pdf"
+                href="/assets/Kaveen_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-sky-800/80 text-sky-300 hover:bg-sky-950/50 text-sm font-bold transition-all duration-200"
@@ -101,9 +101,9 @@ const PersonalInfo = () => {
 
               <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-3xl overflow-hidden border-2 border-slate-700 shadow-2xl bg-slate-900">
                 <img
-                  src="/assets/profile.jpg"
+                  src="/assets/PP.png"
                   alt="Kaveen Nimsara"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-[center_20%] group-hover:scale-105 transition-transform duration-500"
                 />
 
                 <div className="absolute bottom-3 left-3 right-3 p-3 rounded-2xl glass-panel border border-slate-700/60 backdrop-blur-md">
