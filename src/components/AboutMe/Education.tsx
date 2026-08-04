@@ -26,7 +26,6 @@ const Education = () => {
           <div className="relative pl-6 space-y-8 before:absolute before:left-2.5 before:top-3 before:bottom-3 before:w-0.5 before:bg-gradient-to-b before:from-sky-400 before:via-white before:to-transparent">
             {academics.map((item, index) => (
               <div key={index} className="relative group">
-                {/* Timeline dot */}
                 <div className="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-white dark:bg-slate-900 border-2 border-sky-400 group-hover:scale-125 transition-transform duration-200 shadow-md shadow-sky-400/30" />
 
                 <div className="glass-panel rounded-2xl p-5 border border-slate-300/80 dark:border-slate-800/60 group-hover:border-sky-400/50 transition-all duration-300">

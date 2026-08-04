@@ -19,7 +19,6 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
     const node = ref.current;
     if (!node) return;
 
-    // Check if element is already in viewport on initial render
     const rect = node.getBoundingClientRect();
     if (rect.top < window.innerHeight + 150) {
       setIsRevealed(true);
@@ -41,7 +40,7 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
       },
       {
         threshold: 0,
-        rootMargin: "0px 0px 200px 0px", // Trigger 200px BEFORE entering viewport
+        rootMargin: "0px 0px 200px 0px",
       }
     );
 

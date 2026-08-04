@@ -28,7 +28,6 @@ export default function ProjectsPage() {
 
   return (
     <div className="space-y-8 w-full">
-      {/* Title Header Banner */}
       <ScrollReveal>
         <div className="glass-card rounded-3xl p-6 sm:p-8 border border-slate-300/80 dark:border-slate-800/80 shadow-xl space-y-4">
           <div className="flex items-center gap-3.5">
@@ -45,9 +44,7 @@ export default function ProjectsPage() {
             </div>
           </div>
 
-          {/* Filters & Search */}
           <div className="flex flex-col md:flex-row gap-4 justify-between items-center pt-4 border-t border-slate-200/80 dark:border-slate-800">
-            {/* Category Tabs */}
             <div className="flex flex-wrap gap-1.5 p-1.5 rounded-2xl bg-slate-100 dark:bg-slate-800/60 border border-slate-300/70 dark:border-slate-700/50 w-full md:w-auto">
               {categories.map((cat) => (
                 <button
@@ -64,7 +61,6 @@ export default function ProjectsPage() {
               ))}
             </div>
 
-            {/* Search Bar */}
             <div className="relative w-full md:w-80">
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
               <input
@@ -79,7 +75,6 @@ export default function ProjectsPage() {
         </div>
       </ScrollReveal>
 
-      {/* Grid of Cards */}
       {filteredProjects.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project, index) => (

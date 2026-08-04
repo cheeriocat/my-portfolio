@@ -38,7 +38,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`dark ${signatureFont.variable}`} style={{ colorScheme: "dark" }}>
       <body className={`${inter.className} min-h-screen bg-[#090d16] text-slate-100 antialiased selection:bg-sky-400 selection:text-slate-950`}>
-        {/* Ambient Mesh Glow */}
         <div className="mesh-bg" aria-hidden="true">
           <span></span>
           <span></span>

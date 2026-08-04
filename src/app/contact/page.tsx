@@ -37,7 +37,6 @@ export default function ContactPage() {
 
   return (
     <div className="space-y-8 w-full">
-      {/* Header Card */}
       <ScrollReveal>
         <div className="glass-card rounded-3xl p-6 sm:p-8 border border-slate-300/80 dark:border-slate-800/80 shadow-xl space-y-3">
           <div className="flex items-center gap-3.5">
@@ -56,11 +55,8 @@ export default function ContactPage() {
         </div>
       </ScrollReveal>
 
-      {/* Main Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* Contact info cards */}
         <div className="space-y-4 lg:col-span-4">
-          {/* Email Click-to-copy */}
           <ScrollReveal delay={100}>
             <div
               onClick={handleCopyEmail}
@@ -93,7 +89,6 @@ export default function ContactPage() {
             </div>
           </ScrollReveal>
 
-          {/* LinkedIn */}
           <ScrollReveal delay={150}>
             <a
               href="https://linkedin.com/in/kaveennimsara"
@@ -118,7 +113,6 @@ export default function ContactPage() {
             </a>
           </ScrollReveal>
 
-          {/* GitHub */}
           <ScrollReveal delay={200}>
             <a
               href="https://github.com/cheeriocat"
@@ -143,7 +137,6 @@ export default function ContactPage() {
             </a>
           </ScrollReveal>
 
-          {/* Location */}
           <ScrollReveal delay={250}>
             <div className="glass-card rounded-2xl p-5 border border-slate-300/80 dark:border-slate-800/80 flex items-center gap-4">
               <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center flex-shrink-0">
@@ -164,7 +157,6 @@ export default function ContactPage() {
           </ScrollReveal>
         </div>
 
-        {/* Form Container */}
         <div className="lg:col-span-8">
           <ScrollReveal delay={150}>
             <div className="glass-card rounded-3xl p-6 sm:p-8 border border-slate-300/80 dark:border-slate-800/80 shadow-xl">

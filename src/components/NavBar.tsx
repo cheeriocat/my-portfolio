@@ -20,7 +20,6 @@ const NavBar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-40 px-3 sm:px-8 py-2.5 glass-nav transition-all duration-300">
       <div className="max-w-[1550px] mx-auto flex items-center justify-between">
-        {/* Signature Logo & Available Status */}
         <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group">
           <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-sky-400/40 p-0.5 group-hover:border-sky-400 transition-colors shadow-md flex-shrink-0">
             <img
@@ -40,7 +39,6 @@ const NavBar = () => {
           </div>
         </Link>
 
-        {/* Desktop Nav Items */}
         <nav className="hidden md:flex items-center gap-1 bg-slate-800/70 p-1.5 rounded-full border border-slate-700/60 backdrop-blur-md">
           {navItems.map((item) => {
             const Icon = item.icon;
@@ -62,9 +60,7 @@ const NavBar = () => {
           })}
         </nav>
 
-        {/* Action Buttons */}
         <div className="flex items-center gap-2 sm:gap-2.5">
-          {/* Resume CTA (Desktop) */}
           <Link
             href="/assets/Kaveen_CV new.pdf"
             target="_blank"
@@ -75,7 +71,6 @@ const NavBar = () => {
             Resume
           </Link>
 
-          {/* Mobile Menu Toggle Button */}
           <button
             onClick={() => dispatch(toggle())}
             aria-label="Toggle menu"

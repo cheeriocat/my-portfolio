@@ -28,7 +28,6 @@ const SideBar = ({ className }: { className?: string }) => {
         className
       )}
     >
-      {/* Close Button & Signature Logo */}
       <div className="flex justify-between items-center pb-4 mb-4 border-b border-slate-800">
         <span className="font-[family-name:var(--font-signature)] text-3xl text-gradient font-normal tracking-wide leading-none select-none signature-animate">
           Nimzii
@@ -42,7 +41,6 @@ const SideBar = ({ className }: { className?: string }) => {
         </button>
       </div>
 
-      {/* Profile Header */}
       <div className="flex flex-col items-center text-center my-4">
         <div className="relative w-24 h-24 rounded-full overflow-hidden border-2 border-sky-400/60 p-1 shadow-lg shadow-sky-400/15">
           <img
@@ -59,7 +57,6 @@ const SideBar = ({ className }: { className?: string }) => {
         </p>
       </div>
 
-      {/* Navigation Links */}
       <nav className="flex flex-col gap-2 my-6">
         {navLinks.map((link) => {
           const Icon = link.icon;
@@ -94,7 +91,6 @@ const SideBar = ({ className }: { className?: string }) => {
 
       <div className="flex-1" />
 
-      {/* Social Links & Footer */}
       <div className="pt-4 border-t border-slate-800">
         <p className="text-xs text-center text-gray-400 mb-3">
           Connect with me

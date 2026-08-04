@@ -11,7 +11,6 @@ const FeaturedProjects = () => {
 
   return (
     <div className="space-y-6 w-full">
-      {/* Header */}
       <ScrollReveal>
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-center gap-3">
@@ -38,7 +37,6 @@ const FeaturedProjects = () => {
         </div>
       </ScrollReveal>
 
-      {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {featured.map((project, index) => (
           <ScrollReveal key={project.id} delay={index * 120}>

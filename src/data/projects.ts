@@ -102,17 +102,21 @@ export const projects: Project[] = [
   },
   {
     id: "serandib",
-    title: "Serandib Tourism Platform",
-    subTitle: "Sri Lankan Travel & Tourism Web Application",
+    title: "Serandib Technologies",
+    subTitle: "Corporate Web Application",
     description:
-      "A modern web platform designed for Sri Lankan tourism and travel services, enabling users to explore destinations, accommodations, and curated travel experiences with responsive UI.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Next.js", "REST API"],
+      "A modern, high-performance corporate website for Serandib Technologies built with React, Vite, and TypeScript. Features an interactive WebGL wave background, dynamic arcade finder for service centers, events & feed filtering, and smooth framer-motion page transitions.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Vite", "Framer Motion"],
     category: "Web",
     featured: true,
     links: [
       {
         name: "GitHub Repository",
         link: "https://github.com/cheeriocat/serandib-frontend",
+      },
+      {
+        name: "Live Demo",
+        link: "https://serandibtech.vercel.app/",
       },
     ],
   },
@@ -129,6 +133,10 @@ export const projects: Project[] = [
       {
         name: "GitHub Repository",
         link: "https://github.com/cheeriocat/aussiepath-frontend",
+      },
+      {
+        name: "Live Demo",
+        link: "https://aussiepathcustomer.vercel.app/",
       },
     ],
   },

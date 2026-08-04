@@ -51,7 +51,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <>
       <div className="group glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-6 border border-slate-800/80 flex flex-col justify-between hover:shadow-2xl hover:border-sky-400/40 transition-all duration-300 h-full relative overflow-hidden">
-        {/* Top Header Row with Icon & Category */}
         <div className="flex items-center justify-between gap-3 mb-4">
           <div className="flex items-center gap-2.5">
             <div className="p-2.5 rounded-xl bg-sky-500/10 text-sky-400 group-hover:bg-sky-500 group-hover:text-white transition-all duration-300">
@@ -62,7 +61,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </span>
           </div>
 
-          {/* Quick View Details Button */}
           <button
             onClick={() => setIsModalOpen(true)}
             className="p-2 rounded-xl bg-slate-800/80 text-slate-300 hover:text-white hover:bg-sky-500 transition-colors border border-slate-700/60 cursor-pointer shadow-xs"
@@ -73,7 +71,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </button>
         </div>
 
-        {/* Card Main Info */}
         <div className="flex-1 flex flex-col justify-between space-y-4">
           <div className="space-y-1.5 sm:space-y-2">
             <h3 className="text-lg sm:text-xl font-extrabold text-white group-hover:text-sky-300 transition-colors">
@@ -88,7 +85,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </div>
 
           <div className="space-y-3 sm:space-y-4 pt-2">
-            {/* Tech Badges */}
             <div className="flex flex-wrap gap-1.5">
               {project.tech.map((t, i) => (
                 <span
@@ -100,7 +96,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               ))}
             </div>
 
-            {/* Action Links */}
             <div className="flex flex-wrap items-center gap-2 pt-3 border-t border-slate-800/80">
               {project.links.map((link, i) => {
                 const isGithub = link.name.toLowerCase().includes("github");
@@ -130,18 +125,15 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </div>
       </div>
 
-      {/* Image-Free Quick View Modal Rendered via React Portal */}
       {isModalOpen &&
         mounted &&
         createPortal(
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6 bg-slate-950/85 backdrop-blur-md overflow-y-auto">
-            {/* Backdrop click to close */}
             <div
               className="fixed inset-0"
               onClick={() => setIsModalOpen(false)}
             />
 
-            {/* Modal Dialog Card */}
             <div className="relative z-10 w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-slate-900 border border-slate-700/80 shadow-2xl rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-5 my-auto">
               <button
                 onClick={() => setIsModalOpen(false)}

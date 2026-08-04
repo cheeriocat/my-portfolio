@@ -24,7 +24,6 @@ const WhatIDo = () => {
   return (
     <ScrollReveal delay={100}>
       <div className="glass-card rounded-3xl p-6 sm:p-8 border border-slate-300/80 dark:border-slate-800/80 shadow-xl h-full flex flex-col justify-between">
-        {/* Header */}
         <div>
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-300/80 dark:border-slate-800">
             <div className="flex items-center gap-3">
@@ -41,7 +40,6 @@ const WhatIDo = () => {
               </div>
             </div>
 
-            {/* Filter Pills */}
             <div className="flex flex-wrap gap-1.5 p-1 rounded-2xl bg-slate-100 dark:bg-slate-800/60 border border-slate-300/70 dark:border-slate-700/50">
               {categories.map((cat) => (
                 <button
@@ -59,7 +57,6 @@ const WhatIDo = () => {
             </div>
           </div>
 
-          {/* Skills Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {filteredSkills.map((group, index) => {
               const IconComponent = categoryIcons[group.type] || Code;

@@ -18,7 +18,6 @@ const MobileSideMenu = () => {
         isOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
       )}
     >
-      {/* Dark backdrop overlay */}
       <button
         type="button"
         aria-label="Close menu"
