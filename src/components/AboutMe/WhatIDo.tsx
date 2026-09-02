@@ -1,14 +1,16 @@
 "use client";
 import React, { useState } from "react";
 import { skills } from "@/data/skills";
-import { Code, Layout, Wrench, Database, Layers } from "lucide-react";
+import { Code, Layout, Database, Layers, Server, ShieldCheck, Cpu, Terminal } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const categoryIcons: Record<string, React.ElementType> = {
-  "Web Development": Code,
-  "Frameworks": Layout,
-  "Tools": Wrench,
-  "Database": Database,
+  "Programming Languages": Code,
+  "Frameworks & Libraries": Layout,
+  "OS & Virtualization": Cpu,
+  "Infrastructure & Security": ShieldCheck,
+  "SysAdmin & Networking": Server,
+  "Databases & Cloud": Database,
 };
 
 const WhatIDo = () => {

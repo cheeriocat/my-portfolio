@@ -32,13 +32,13 @@ const PersonalInfo = () => {
                   Kaveen Nimsara
                 </span>
               </h1>
-              <h2 className="text-lg sm:text-xl font-bold text-sky-300">
-                Computer Science Undergraduate & Web Developer
+              <h2 className="text-sm sm:text-base lg:text-lg font-extrabold text-sky-300 uppercase tracking-wide leading-snug">
+                Computer Science Undergraduate & ASPIRING SYSTEMS ADMINISTRATOR & IT SECURITY / DEVOPS ENTHUSIAST
               </h2>
             </div>
 
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed font-medium">
-              I&apos;m a Computer Science student based in Sri Lanka, focused on building clean, high-performance applications across web, mobile, and desktop. On the frontend, I work with <strong className="text-white font-extrabold">React, TypeScript, Next.js, and Flutter</strong> to craft polished, intuitive interfaces. On the backend, I build with <strong className="text-white font-extrabold">Node.js and Java</strong>, using <strong className="text-white font-extrabold">MongoDB, SQL, and Firebase</strong> to power reliable, scalable systems.
+              Computer Science undergraduate building a strong foundation in <strong className="text-white font-extrabold">systems administration, network infrastructure, and IT security</strong> through hands-on personal labs in Linux server management, networking fundamentals, and virtualization, alongside solid full-stack development experience across the <strong className="text-white font-extrabold">MERN stack, Java, and multiple programming languages</strong>. Driven to apply this practical technical foundation to contribute to reliable and secure IT operations.
             </p>
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">

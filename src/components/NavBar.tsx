@@ -24,13 +24,13 @@ const NavBar = () => {
           <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-sky-400/40 p-0.5 group-hover:border-sky-400 transition-colors shadow-md flex-shrink-0">
             <img
               src="/assets/PP.png"
-              alt="Nimzii"
+              alt="Kaveen Nimsara"
               className="w-full h-full object-cover rounded-full"
             />
           </div>
           <div className="flex flex-col">
-            <span className="font-[family-name:var(--font-signature)] text-2xl sm:text-3xl text-gradient font-normal tracking-wide leading-none select-none drop-shadow-[0_2px_8px_rgba(116,172,223,0.35)] signature-animate py-0.5">
-              Nimzii
+            <span className="font-sans font-bold text-xl sm:text-2xl text-white tracking-tight leading-none select-none py-0.5 group-hover:text-sky-300 transition-colors">
+              Kaveen Nimsara
             </span>
             <span className="text-[10px] sm:text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5 -mt-0.5">
               <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-500 animate-pulse"></span>

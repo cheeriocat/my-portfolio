@@ -1,4 +1,4 @@
-export type CategoryType = "Web" | "Mobile" | "Java/Desktop" | "AI & Tools";
+export type CategoryType = "Web" | "Mobile" | "Java/Desktop" | "AI & Tools" | "SysAdmin & Cloud";
 
 export interface Project {
   id: string;
@@ -16,6 +16,22 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: "linux-server-lab",
+    title: "Linux Infrastructure & Web Server Lab",
+    subTitle: "Ubuntu Server & Network Infrastructure Simulation",
+    description:
+      "Deployed and configured an Ubuntu Server instance in Oracle VirtualBox simulating a small business server environment. Configured Apache Web Server virtual hosts, SSH for secure administration, UFW firewall rules, automated Bash backup scripts, and resource monitoring.",
+    tech: ["Ubuntu Server", "Apache", "SSH", "UFW Firewall", "Bash Scripting", "Oracle VirtualBox", "OpenSSL"],
+    category: "SysAdmin & Cloud",
+    featured: true,
+    links: [
+      {
+        name: "GitHub Repository",
+        link: "https://github.com/cheeriocat",
+      },
+    ],
+  },
   {
     id: "resumind",
     title: "Resumind",

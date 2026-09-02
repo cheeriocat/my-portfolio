@@ -1,18 +1,27 @@
 export const skills = [
   {
-    type: "Web Development",
-    items: [
-      "HTML5",
-      "CSS3",
-      "Java",
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "Flutter",
-      "Vite",
-    ],
+    type: "Programming Languages",
+    items: ["Java", "JavaScript", "Python", "C", "SQL", "PHP", "TypeScript", "HTML5", "CSS3"],
   },
-  { type: "Frameworks", items: ["Next.js", "Express", "Node.js", "Tailwind CSS"] },
-  { type: "Tools", items: ["Git", "GitHub", "Figma", "Firebase", "VS Code"] },
-  { type: "Database", items: ["MySQL", "MongoDB", "Firebase"] },
+  {
+    type: "Frameworks & Libraries",
+    items: ["React", "Express", "Next.js", "Node.js", "Bootstrap", "Tailwind CSS"],
+  },
+  {
+    type: "OS & Virtualization",
+    items: ["Ubuntu Linux", "Windows Server", "Oracle VirtualBox"],
+  },
+  {
+    type: "Infrastructure & Security",
+    items: ["Apache Web Server", "IIS Web Server", "SSL Certificates", "SSL VPN"],
+  },
+  {
+    type: "SysAdmin & Networking",
+    items: ["SSH", "Linux User Management", "Linux File Permissions", "UFW Firewall", "DNS", "DHCP", "TCP/IP", "Public & Private IP Addressing"],
+  },
+  {
+    type: "Databases & Cloud",
+    items: ["MySQL", "MongoDB", "Firebase"],
+  },
 ];
+

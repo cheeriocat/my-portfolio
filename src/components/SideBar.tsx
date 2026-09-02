@@ -29,8 +29,8 @@ const SideBar = ({ className }: { className?: string }) => {
       )}
     >
       <div className="flex justify-between items-center pb-4 mb-4 border-b border-slate-800">
-        <span className="font-[family-name:var(--font-signature)] text-3xl text-gradient font-normal tracking-wide leading-none select-none signature-animate">
-          Nimzii
+        <span className="font-bold text-xl text-white tracking-tight leading-none select-none">
+          Kaveen Nimsara
         </span>
         <button
           onClick={() => dispatch(close())}
@@ -45,7 +45,7 @@ const SideBar = ({ className }: { className?: string }) => {
         <div className="relative w-24 h-24 rounded-full overflow-hidden border-2 border-sky-400/60 p-1 shadow-lg shadow-sky-400/15">
           <img
             src="/assets/PP.png"
-            alt="Nimzii"
+            alt="Kaveen Nimsara"
             className="w-full h-full object-cover rounded-full"
           />
         </div>
@@ -53,7 +53,7 @@ const SideBar = ({ className }: { className?: string }) => {
           Kaveen Nimsara
         </h2>
         <p className="text-xs text-sky-300 font-semibold mt-0.5">
-          CS Undergraduate & Developer
+          CS Undergraduate & SysAdmin / DevOps Enthusiast
         </p>
       </div>
 

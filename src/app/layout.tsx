@@ -15,18 +15,19 @@ const signatureFont = Alex_Brush({
 });
 
 export const metadata: Metadata = {
-  title: "Nimzii | Kaveen Nimsara - CS Undergraduate & Developer",
+  title: "Kaveen Nimsara - CS Undergraduate & Aspiring Systems Administrator",
   description:
-    "Personal portfolio of Kaveen Nimsara (Nimzii), a Computer Science undergraduate from Sri Lanka passionate about building clean, modern web apps with React, Next.js & TypeScript.",
+    "Personal portfolio of Kaveen Nimsara, a Computer Science undergraduate from Sri Lanka passionate about systems administration, network infrastructure, IT security, and full-stack development.",
   keywords: [
-    "Nimzii",
     "Kaveen Nimsara",
     "Portfolio",
     "Computer Science",
+    "Systems Administrator",
+    "IT Security",
+    "DevOps",
+    "Linux Server Management",
     "Sri Lanka",
-    "React Developer",
-    "Next.js Developer",
-    "Full-Stack",
+    "Full-Stack Developer",
   ],
 };
 

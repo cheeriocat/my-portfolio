@@ -9,7 +9,7 @@ export default function ProjectsPage() {
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState<string>("");
 
-  const categories = ["All", "Web", "Java/Desktop", "Mobile", "AI & Tools"];
+  const categories = ["All", "SysAdmin & Cloud", "Web", "Java/Desktop", "Mobile", "AI & Tools"];
 
   const filteredProjects = projects.filter((project) => {
     const matchesCategory =
