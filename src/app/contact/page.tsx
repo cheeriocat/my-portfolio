@@ -48,7 +48,8 @@ export default function ContactPage() {
                 Get in Touch
               </h1>
               <p className="text-xs sm:text-sm text-slate-600 dark:text-gray-400 font-medium">
-                Have a question, project proposal, or opportunity? I&apos;d love to connect.
+                Have a question, project proposal, or opportunity? I&apos;d love
+                to connect.
               </p>
             </div>
           </div>
@@ -76,7 +77,9 @@ export default function ContactPage() {
                   {copied ? (
                     <>
                       <Check className="w-3 h-3 text-emerald-500" />
-                      <span className="text-emerald-600 dark:text-emerald-400">Copied to clipboard!</span>
+                      <span className="text-emerald-600 dark:text-emerald-400">
+                        Copied to clipboard!
+                      </span>
                     </>
                   ) : (
                     <>
@@ -164,7 +167,8 @@ export default function ContactPage() {
                 Send a Direct Message
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 dark:text-gray-400 mb-6 font-medium">
-                Fill out the form below and I will respond to your message within 24 hours.
+                Fill out the form below and I will respond to your message
+                within 24 hours.
               </p>
 
               {submitted ? (
@@ -174,7 +178,8 @@ export default function ContactPage() {
                     Message Sent Successfully!
                   </h3>
                   <p className="text-xs text-slate-600 dark:text-gray-300 font-medium">
-                    Thank you for reaching out. I will review your message and reply soon.
+                    Thank you for reaching out. I will review your message and
+                    reply soon.
                   </p>
                 </div>
               ) : (
