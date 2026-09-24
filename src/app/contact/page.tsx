@@ -150,7 +150,7 @@ export default function ContactPage() {
                   Location
                 </p>
                 <p className="font-extrabold text-slate-900 dark:text-white text-sm">
-                  Galle, Sri Lanka
+                  colombo, Sri Lanka
                 </p>
                 <p className="text-xs text-emerald-600 dark:text-emerald-400 font-bold mt-1">
                   Open to remote & relocation

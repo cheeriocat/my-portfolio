@@ -1,7 +1,14 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, FileText, Mail, Code2, GraduationCap, MapPin } from "lucide-react";
+import {
+  ArrowRight,
+  FileText,
+  Mail,
+  Code2,
+  GraduationCap,
+  MapPin,
+} from "lucide-react";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -28,17 +35,32 @@ const PersonalInfo = () => {
             <div className="space-y-2">
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
                 Hi, I&apos;m{" "}
-                <span className="text-gradient">
-                  Kaveen Nimsara
-                </span>
+                <span className="text-gradient">Kaveen Nimsara</span>
               </h1>
               <h2 className="text-sm sm:text-base lg:text-lg font-extrabold text-sky-300 uppercase tracking-wide leading-snug">
-                Computer Science Undergraduate & ASPIRING SYSTEMS ADMINISTRATOR & IT SECURITY / DEVOPS ENTHUSIAST
+                Computer Science Undergraduate | Aspiring DevOps & Systems
+                Engineer
               </h2>
             </div>
 
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed font-medium">
-              Computer Science undergraduate building a strong foundation in <strong className="text-white font-extrabold">systems administration, network infrastructure, and IT security</strong> through hands-on personal labs in Linux server management, networking fundamentals, and virtualization, alongside solid full-stack development experience across the <strong className="text-white font-extrabold">MERN stack, Java, and multiple programming languages</strong>. Driven to apply this practical technical foundation to contribute to reliable and secure IT operations.
+              Computer Science undergraduate focused on{" "}
+              <strong className="text-white font-extrabold">
+                cloud infrastructure, DevOps, and systems administration
+              </strong>
+              . I build and deploy on{" "}
+              <strong className="text-white font-extrabold">AWS</strong>,
+              automate releases with{" "}
+              <strong className="text-white font-extrabold">
+                CI/CD pipelines and Terraform
+              </strong>
+              , and manage secure Linux servers through hands-on labs. My
+              full-stack background in the{" "}
+              <strong className="text-white font-extrabold">
+                MERN stack and Java
+              </strong>{" "}
+              helps me understand both the applications and the infrastructure
+              they run on.
             </p>
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
@@ -108,10 +130,12 @@ const PersonalInfo = () => {
 
                 <div className="absolute bottom-3 left-3 right-3 p-3 rounded-2xl glass-panel border border-slate-700/60 backdrop-blur-md">
                   <div className="flex items-center justify-between text-xs">
-                    <span className="font-extrabold text-white">Kaveen Nimsara</span>
+                    <span className="font-extrabold text-white">
+                      Kaveen Nimsara
+                    </span>
                     <span className="text-emerald-400 font-bold flex items-center gap-1.5">
                       <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-                      Galle, LK
+                      Colombo, LK
                     </span>
                   </div>
                 </div>
@@ -127,7 +151,9 @@ const PersonalInfo = () => {
             </div>
             <div>
               <p className="text-xs text-gray-400 font-bold">Projects Built</p>
-              <p className="text-base font-extrabold text-white">9+ Applications</p>
+              <p className="text-base font-extrabold text-white">
+                9+ Applications
+              </p>
             </div>
           </div>
 
@@ -137,7 +163,9 @@ const PersonalInfo = () => {
             </div>
             <div>
               <p className="text-xs text-gray-400 font-bold">Education</p>
-              <p className="text-base font-extrabold text-white">BSc in Computer Science (UG)</p>
+              <p className="text-base font-extrabold text-white">
+                BSc in Computer Science (UG)
+              </p>
             </div>
           </div>
 
@@ -147,7 +175,9 @@ const PersonalInfo = () => {
             </div>
             <div>
               <p className="text-xs text-gray-400 font-bold">Location</p>
-              <p className="text-base font-extrabold text-white">Galle, Sri Lanka</p>
+              <p className="text-base font-extrabold text-white">
+                Ethul Kotte, Colombo
+              </p>
             </div>
           </div>
         </div>
